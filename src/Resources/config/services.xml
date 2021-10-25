@@ -7,13 +7,20 @@
     <services>
         <defaults autowire="true" autoconfigure="true" public="false"/>
 
-        <service id="Tuzex\Bundle\Superfaktura\Http\SymfonyHttpClient">
+        <service id="Tuzex\Bundle\Superfaktura\Http\SymfonyHttpClient" autowire="false">
             <argument type="service" id="superfaktura.http_client"/>
         </service>
 
         <service id="Tuzex\Superfaktura\Http\HttpClient" alias="Tuzex\Bundle\Superfaktura\Http\SymfonyHttpClient"/>
 
-        <service id="Tuzex\Superfaktura\NativeApiClient"/>
+        <service id="Tuzex\Superfaktura\Api\Invoices" autowire="false" />
+        <service id="Tuzex\Superfaktura\Api\Stock" autowire="false" />
+
+        <service id="Tuzex\Superfaktura\NativeApiClient" autowire="false">
+            <argument type="service" id="Tuzex\Superfaktura\Api\Invoices"/>
+            <argument type="service" id="Tuzex\Superfaktura\Api\Stock"/>
+        </service>
+
         <service id="Tuzex\Superfaktura\ApiClient" alias="Tuzex\Superfaktura\NativeApiClient"/>
     </services>
 </container>
