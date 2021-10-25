@@ -1,0 +1,37 @@
+{
+  "name": "tuzex/superfaktura-bundle",
+  "description": "",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Edo Barnas",
+      "email": "iam@edobarnas.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Tuzex\\Bundle\\Superfaktura\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tuzex\\Bundle\\Superfaktura\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "8.*",
+    "symfony/framework-bundle": "4.3.*|4.4.*|5.*",
+    "symfony/http-client": "5.*",
+    "tuzex/superfaktura": "dev-master"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "0.12.*",
+    "phpstan/phpstan-phpunit": "0.12.*",
+    "phpunit/phpunit": "9.5.*",
+    "symplify/easy-coding-standard": "9.4.*"
+  }
+}
