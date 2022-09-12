@@ -7,20 +7,20 @@
     <services>
         <defaults autowire="true" autoconfigure="true" public="false"/>
 
-        <service id="Tuzex\Bundle\Superfaktura\Http\SymfonyHttpClient" autowire="false">
+        <service id="Codea\Bundle\Superfaktura\Http\SymfonyHttpClient" autowire="false">
             <argument type="service" id="superfaktura.http_client"/>
         </service>
 
-        <service id="Tuzex\Superfaktura\Http\HttpClient" alias="Tuzex\Bundle\Superfaktura\Http\SymfonyHttpClient"/>
+        <service id="Codea\Superfaktura\Http\HttpClient" alias="Codea\Bundle\Superfaktura\Http\SymfonyHttpClient"/>
 
-        <service id="Tuzex\Superfaktura\Api\Invoices" />
-        <service id="Tuzex\Superfaktura\Api\Stock" />
+        <service id="Codea\Superfaktura\Api\Invoices" />
+        <service id="Codea\Superfaktura\Api\Stock" />
 
-        <service id="Tuzex\Superfaktura\NativeApiClient" autowire="false">
-            <argument type="service" id="Tuzex\Superfaktura\Api\Invoices"/>
-            <argument type="service" id="Tuzex\Superfaktura\Api\Stock"/>
+        <service id="Codea\Superfaktura\NativeApiClient" autowire="false">
+            <argument type="service" id="Codea\Superfaktura\Api\Invoices"/>
+            <argument type="service" id="Codea\Superfaktura\Api\Stock"/>
         </service>
 
-        <service id="Tuzex\Superfaktura\ApiClient" alias="Tuzex\Superfaktura\NativeApiClient"/>
+        <service id="Codea\Superfaktura\ApiClient" alias="Codea\Superfaktura\NativeApiClient"/>
     </services>
 </container>

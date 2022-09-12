@@ -1,5 +1,5 @@
 {
-  "name": "tuzex/superfaktura-bundle",
+  "name": "codea/superfaktura-bundle",
   "description": "",
   "type": "symfony-bundle",
   "license": "MIT",
@@ -19,19 +19,19 @@
   },
   "autoload": {
     "psr-4": {
-      "Tuzex\\Bundle\\Superfaktura\\": "src/"
+      "Codea\\Bundle\\Superfaktura\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tuzex\\Bundle\\Superfaktura\\Test\\": "tests/"
+      "Codea\\Bundle\\Superfaktura\\Test\\": "tests/"
     }
   },
   "require": {
     "php": "^8.1",
     "symfony/framework-bundle": "6.*",
     "symfony/http-client": "6.*",
-    "tuzex/superfaktura": "dev-master"
+    "codea/superfaktura": "dev-master"
   },
   "require-dev": {
     "phpstan/phpstan": "1.3.*",

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tuzex\Bundle\Superfaktura;
+namespace Codea\Bundle\Superfaktura;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;

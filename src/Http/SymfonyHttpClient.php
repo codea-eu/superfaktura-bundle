@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tuzex\Bundle\Superfaktura\Http;
+namespace Codea\Bundle\Superfaktura\Http;
 
+use Codea\Superfaktura\Http\HttpClient;
+use Codea\Superfaktura\Http\Request;
+use Codea\Superfaktura\Http\Response;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
-use Tuzex\Superfaktura\Http\HttpClient;
-use Tuzex\Superfaktura\Http\Request;
-use Tuzex\Superfaktura\Http\Response;
 
 final class SymfonyHttpClient implements HttpClient
 {

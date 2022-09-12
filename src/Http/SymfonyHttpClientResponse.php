@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tuzex\Bundle\Superfaktura\Http;
+namespace Codea\Bundle\Superfaktura\Http;
 
+use Codea\Superfaktura\Http\Response;
 use Symfony\Contracts\HttpClient\ResponseInterface;
-use Tuzex\Superfaktura\Http\Response;
 
 final class SymfonyHttpClientResponse implements Response
 {

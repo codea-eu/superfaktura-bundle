@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tuzex\Bundle\Superfaktura\DependencyInjection;
+namespace Codea\Bundle\Superfaktura\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -17,7 +17,7 @@ final class SuperfakturaExtension extends Extension implements ExtensionInterfac
 
     public function __construct()
     {
-        $this->fileLocator = new FileLocator(__DIR__.'/../Resources/config');
+        $this->fileLocator = new FileLocator(__DIR__ . '/../Resources/config');
     }
 
     public function prepend(ContainerBuilder $container): void
